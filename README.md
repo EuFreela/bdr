@@ -15,7 +15,7 @@
 
 #### WINDOWS/MAC: INSTALAÇÃO DO XAMP
 
-<p>Baixe-o <a href="https://www.apachefriends.org/pt_br/index.html">XAMP</a>. Instale-o</p>
+<p>Baixe o <a href="https://www.apachefriends.org/pt_br/index.html">XAMP</a> ou o wamp. Instale-o</p>
 
   
 #### DER
