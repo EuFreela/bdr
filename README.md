@@ -38,7 +38,7 @@ DB_PASSWORD=sua_senha
 
 ### USO
 
-<p>Após instalado as dependencias acima, vamos entrar no sistema. Existem duas formas de entrar no sistema:</p>
+<p>Após instalado as dependencias acima, vamos entrar no sistema. Existem duas formas para este fim:</p>
 
 <ul>
    <li>1. Se estiver no linux: o diretório da raíz deverá estar dentro do apache (/var/www/html/bdr). Além disso, será preciso dar permissão de execução ao mesmo <b>sudo chmod -R 777 bdr</b>, e após permitir que o apache seja o interlocutor <b>sudo chown seu_usuario:www-data</b>. Configuraçes manuais de um servidor Linux. Para acessar o sistema, por esta opção, <b>http://seu_ip ou localhost/bdr/public/index.php</b></li>
@@ -46,7 +46,7 @@ DB_PASSWORD=sua_senha
   <li>3. Por motivos de facilitar o uso deste exemplo, podemos usar o servidor interno do Laravel. Entre com um terminal no diretório a aplicação (cd bdr/). Execute o comando <b>php artisan serve</b>. O sistema irá rodar, por default, na porta 8080. Basta acessar a URL informada que será: http://localhost:8000/. Para usar esta opço, não há necessidade de jogar a aplicaço dentro de um servidor php.</li>
 </ul>
 
-<p>A página inicial é de boas vindas. Para acessar o sistema você everá clicar no link na parte superior esquerda: login; ou registo. Caso no tenha cadastro, basta criar um e entrar no sistema.</p>
+<p>A página inicial é de boas vindas. Para acessar o sistema você deverá clicar no link na parte superior esquerda: login; ou registro. Caso não tenha cadastro, basta criar um e entrar no sistema.</p>
 
 ### API
 
