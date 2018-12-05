@@ -53,5 +53,5 @@ DB_PASSWORD=sua_senha
 <p>A api foi desenvolvida e documentada na ferramenta POSTMAN. A coleção se encontra na diretório API e sua documentaçao no link <a href="https://documenter.getpostman.com/view/5603672/RzfgmoG4" target="_blank">API DOCUMENTAÇÃO</a>.</p>
 
 <p>Foi criado um middleware para controle com o auth do sistema: APICheckJWTMiddleware</p>
-<p>Para criação de TOKEN foi utilizado o recurso JWT (https://jwt.io/introduction/).</p>
+<p>Para criação de TOKEN foi utilizado o recurso JWT (https://jwt.io/introduction/) (https://jwt-auth.readthedocs.io/en/develop/).</p>
 
