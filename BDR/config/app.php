@@ -177,7 +177,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         
-        'Tymon\JWTAuth\Providers\JWTAuthServiceProvider',
+        //'Tymon\JWTAuth\Providers\JWTAuthServiceProvider',
 
     ],
 
@@ -228,8 +228,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         
-        'JWTAuth' => 'Tymon\JWTAuth\Facades\JWTAuth',
-        'JWTFactory' => 'Tymon\JWTAuth\Facades\JWTFactory',
+        //'JWTAuth' => 'Tymon\JWTAuth\Facades\JWTAuth',
+        //'JWTFactory' => 'Tymon\JWTAuth\Facades\JWTFactory',
 
     ],
 
