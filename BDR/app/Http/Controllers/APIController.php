@@ -100,6 +100,12 @@ class APIController extends Controller
     }
 
 
+    /*
+    |--------------------------------------------------------------------------
+    | PUTTERS
+    |--------------------------------------------------------------------------
+    | @BDR.
+    */
     public function apiPutTask(Request $request, $id)
     {
         $validator=Validator::make($request->all(),$this->rulesTask());  
