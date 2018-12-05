@@ -3,19 +3,19 @@
 ### INSTALAÇÃO
 
 <ul>
-  <li><b>1. Ambiente de desenvolvimento:</b> o sistema foi desenvolvido em LAMP (Linux Apache Mysql PHP). Porém, não há  conglitos quanto a outros sservidores desde que seja php.</li>
+  <li><b>1. Ambiente de desenvolvimento:</b> o sistema foi desenvolvido em LAMP (Linux Apache Mysql PHP). Porém, não há  conflitos quanto a outros servidores desde que seja php.</li>
   <li>2. Estou usando o Auth padrão do laravel para criação do acesso ao sistema com login e senha. Como não esta no documento de requisitos, resolvi usá-la por ser mais rápido. A recuperação de senha e envio por e-mail não foi implementado, mas, teho um packger já feito para este fim. Resolvi fazer manualmente para que o conceito fique claro: <a href="https://packagist.org/packages/lameck/lauth">LAUTH</a>.</li>
-  <li>3. Layout: Eu mantive o uso do bootstrap 4.1. Posso criar um novo layout como posso utilizar algum pronto. Resolvi usar o recurso por mais rápido. Contudo, encontra-se responsivo.</li>
+  <li>3. Layout: Eu mantive o uso do bootstrap 4.1. Posso criar um novo layout como posso utilizar algum pronto. Resolvi usar o recurso por ser mais rápido. Contudo, encontra-se responsivo.</li>
 </ul>
 
 #### LINUX: INSTALAÇÃO DO LAMP
 <p>Para lhe auxiliar na istalaço e configuração do sistema, este arquivo poderá ser útil: <a href="https://github.com/EuFreela/LIBRAKIDS/blob/master/install.sh">install.sh</a></p>
-<p>Para usá-lo, baixe-o. Abra o terminal e execute-o: sudo sh install.sh</p>
-<p>Caso exista a necessidade de instalaço manual, instale: PHP; MySql<p>
+<p>Para usá-lo, baixe-o. Abra o terminal e execute-o: <b>sudo sh install.sh</b></p>
+<p>Caso exista a necessidade de instalação manual, instale  o PHP e o MySql<p>
 
 #### WINDOWS/MAC: INSTALAÇÃO DO XAMP
 
-<p>Baixe o <a href="https://www.apachefriends.org/pt_br/index.html">XAMP</a>. Instaleo</p>
+<p>Baixe-o <a href="https://www.apachefriends.org/pt_br/index.html">XAMP</a>. Instale-o</p>
 
   
 #### DER
