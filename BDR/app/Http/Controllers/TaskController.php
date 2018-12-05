@@ -9,6 +9,12 @@ use App\Model\SystemMessageModel;
 
 class TaskController extends Controller
 {
+    /*
+    |--------------------------------------------------------------------------
+    | GETTERS
+    |--------------------------------------------------------------------------
+    | @BDR.
+    */
     public function getCreate()
     {
         return view('task.task-create')
@@ -32,6 +38,22 @@ class TaskController extends Controller
         ]);
     }
 
+    public function getPriority()
+    {
+        return view('task.task-priority')
+        ->with([
+            'task' => TaskModel::all(),
+            'priority'=>PriorityModel::all()
+        ]);
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | POSTTERS
+    |--------------------------------------------------------------------------
+    | @BDR.
+    */
     public function postCreate(Request $request)
     {
         $request->validate([            
@@ -53,6 +75,12 @@ class TaskController extends Controller
             ->with('error',SystemMessageModel::where('code','=',2)->first()->name); 
     }
 
+    /*
+    |--------------------------------------------------------------------------
+    | PUTTERS
+    |--------------------------------------------------------------------------
+    | @BDR.
+    */
     public function putEdit(Request $request, $id)
     {
         $request->validate([            
@@ -75,7 +103,12 @@ class TaskController extends Controller
             ->with('error',SystemMessageModel::where('code','=',4)->first()->name);
     }
 
-
+    /*
+    |--------------------------------------------------------------------------
+    | DELETTERS
+    |--------------------------------------------------------------------------
+    | @BDR.
+    */
     public function Delete($id)
     {
         if(TaskMOdel::where('id','=',$id)->delete())
