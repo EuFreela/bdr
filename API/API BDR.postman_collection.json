@@ -1,0 +1,375 @@
+{
+	"id": "216e716d-1292-9b4c-97fd-7e5dd81f8428",
+	"name": "API BDR",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"owner": "5603672",
+			"lastUpdatedBy": "5603672",
+			"lastRevision": 5793909860,
+			"folder": null,
+			"id": "e9953fe7-cc3c-42ca-bc72-03ca5394d04c",
+			"name": "Account/Conta",
+			"description": "",
+			"variables": null,
+			"auth": null,
+			"events": null,
+			"order": [],
+			"folders_order": [
+				"671904a7-332f-421a-982c-7235a0a92bef",
+				"0ccbe4b3-ee88-4aef-9e11-e54bb04f9fdd"
+			]
+		},
+		{
+			"owner": "5603672",
+			"lastUpdatedBy": "5603672",
+			"lastRevision": 5794080617,
+			"folder": "db577a2c-facd-445d-bdbe-51de59510343",
+			"id": "8ce20778-291d-497c-98be-4028c11273e8",
+			"name": "Create/Criar",
+			"description": "",
+			"variables": null,
+			"auth": null,
+			"events": null,
+			"order": [
+				"e3af5f44-55ce-47c7-9821-66651d6bad89"
+			],
+			"folders_order": []
+		},
+		{
+			"owner": "5603672",
+			"lastUpdatedBy": "5603672",
+			"lastRevision": 5793911948,
+			"folder": "e9953fe7-cc3c-42ca-bc72-03ca5394d04c",
+			"id": "0ccbe4b3-ee88-4aef-9e11-e54bb04f9fdd",
+			"name": "Create/Criar Usuário",
+			"description": "",
+			"variables": null,
+			"auth": null,
+			"events": null,
+			"order": [
+				"b817cd7f-1bd3-47a6-af32-adc812469245"
+			],
+			"folders_order": []
+		},
+		{
+			"owner": "5603672",
+			"lastUpdatedBy": "5603672",
+			"lastRevision": 5794162687,
+			"folder": "db577a2c-facd-445d-bdbe-51de59510343",
+			"id": "3c11c750-6cf1-437f-b9e9-f15b2813acc7",
+			"name": "Del/Deletar",
+			"description": "",
+			"variables": null,
+			"auth": null,
+			"events": null,
+			"order": [
+				"cafb30f9-d080-4e0a-86a7-40703e45a1a1"
+			],
+			"folders_order": []
+		},
+		{
+			"owner": "5603672",
+			"lastUpdatedBy": "5603672",
+			"lastRevision": 5794136433,
+			"folder": "db577a2c-facd-445d-bdbe-51de59510343",
+			"id": "7061f812-51cf-419d-a866-acceed791ed9",
+			"name": "Edit/Editar",
+			"description": "",
+			"variables": null,
+			"auth": null,
+			"events": null,
+			"order": [
+				"d78baa86-e46d-4368-a91e-c25bdd54f30b"
+			],
+			"folders_order": []
+		},
+		{
+			"owner": "5603672",
+			"lastUpdatedBy": "5603672",
+			"lastRevision": 5794106731,
+			"folder": "db577a2c-facd-445d-bdbe-51de59510343",
+			"id": "a0fcf636-837b-4394-a5c0-e3b8824084a3",
+			"name": "List/Listar",
+			"description": "",
+			"variables": null,
+			"auth": null,
+			"events": null,
+			"order": [
+				"d2164521-72f8-4948-a3cc-49ed5f817f62"
+			],
+			"folders_order": []
+		},
+		{
+			"owner": "5603672",
+			"lastUpdatedBy": "5603672",
+			"lastRevision": 5793820792,
+			"folder": "e9953fe7-cc3c-42ca-bc72-03ca5394d04c",
+			"id": "671904a7-332f-421a-982c-7235a0a92bef",
+			"name": "Login",
+			"description": "",
+			"variables": null,
+			"auth": null,
+			"events": null,
+			"order": [
+				"e80b4e1e-4e68-4b72-a382-628d24d04ac6"
+			],
+			"folders_order": []
+		},
+		{
+			"owner": "5603672",
+			"lastUpdatedBy": "5603672",
+			"lastRevision": 5794158659,
+			"folder": null,
+			"id": "db577a2c-facd-445d-bdbe-51de59510343",
+			"name": "Task/Tarefa",
+			"description": "",
+			"variables": null,
+			"auth": null,
+			"events": null,
+			"order": [],
+			"folders_order": [
+				"8ce20778-291d-497c-98be-4028c11273e8",
+				"a0fcf636-837b-4394-a5c0-e3b8824084a3",
+				"7061f812-51cf-419d-a866-acceed791ed9",
+				"3c11c750-6cf1-437f-b9e9-f15b2813acc7"
+			]
+		}
+	],
+	"folders_order": [
+		"e9953fe7-cc3c-42ca-bc72-03ca5394d04c",
+		"db577a2c-facd-445d-bdbe-51de59510343"
+	],
+	"timestamp": 1543977206473,
+	"owner": "5603672",
+	"public": false,
+	"requests": [
+		{
+			"folder": "0ccbe4b3-ee88-4aef-9e11-e54bb04f9fdd",
+			"id": "b817cd7f-1bd3-47a6-af32-adc812469245",
+			"name": "{{apiURL}}/api/signup?email=marcos2@gmail.com&password=123456&rewrite_password=123456&name=Marcos",
+			"dataMode": null,
+			"data": [],
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": null,
+			"variables": null,
+			"headers": "",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{apiURL}}/api/signup?email=marcos2@gmail.com&password=123456&rewrite_password=123456&name=Marcos",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [
+				{
+					"key": "email",
+					"value": "marcos2@gmail.com",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "rewrite_password",
+					"value": "123456",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Marcos",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"headerData": [],
+			"pathVariableData": [],
+			"collectionId": "216e716d-1292-9b4c-97fd-7e5dd81f8428"
+		},
+		{
+			"folder": "3c11c750-6cf1-437f-b9e9-f15b2813acc7",
+			"id": "cafb30f9-d080-4e0a-86a7-40703e45a1a1",
+			"name": "{{apiURL}}/api/task-del/10",
+			"dataMode": null,
+			"data": [],
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": null,
+			"variables": null,
+			"headers": "",
+			"method": "DELETE",
+			"pathVariables": {},
+			"url": "{{apiURL}}/api/task-del/10",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [],
+			"pathVariableData": [],
+			"collectionId": "216e716d-1292-9b4c-97fd-7e5dd81f8428"
+		},
+		{
+			"folder": "a0fcf636-837b-4394-a5c0-e3b8824084a3",
+			"id": "d2164521-72f8-4948-a3cc-49ed5f817f62",
+			"name": "{{apiURL}}/api/task-list",
+			"dataMode": null,
+			"data": [],
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": null,
+			"variables": null,
+			"headers": "",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "{{apiURL}}/api/task-list",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [],
+			"pathVariableData": [],
+			"collectionId": "216e716d-1292-9b4c-97fd-7e5dd81f8428"
+		},
+		{
+			"folder": "7061f812-51cf-419d-a866-acceed791ed9",
+			"id": "d78baa86-e46d-4368-a91e-c25bdd54f30b",
+			"name": "{{apiURL}}/api/task-edit/10?name=Tarefa 2&description=Alguma coisa&priority=7",
+			"dataMode": null,
+			"data": [],
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": null,
+			"variables": null,
+			"headers": "",
+			"method": "PUT",
+			"pathVariables": {},
+			"url": "{{apiURL}}/api/task-edit/10?name=Tarefa 2&description=Alguma coisa&priority=7",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [
+				{
+					"key": "name",
+					"value": "Tarefa 2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "Alguma coisa",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "priority",
+					"value": "7",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"headerData": [],
+			"pathVariableData": [],
+			"collectionId": "216e716d-1292-9b4c-97fd-7e5dd81f8428"
+		},
+		{
+			"folder": "8ce20778-291d-497c-98be-4028c11273e8",
+			"id": "e3af5f44-55ce-47c7-9821-66651d6bad89",
+			"name": "{{apiURL}}/api/task-create?name=Tarefa 1&priority=1&description=Descrição teste",
+			"dataMode": null,
+			"data": [],
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": null,
+			"variables": null,
+			"headers": "",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{apiURL}}/api/task-create?name=Tarefa 1&priority=1&description=Descrição teste",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [
+				{
+					"key": "name",
+					"value": "Tarefa 1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "priority",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "Descrição teste",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"headerData": [],
+			"pathVariableData": [],
+			"collectionId": "216e716d-1292-9b4c-97fd-7e5dd81f8428"
+		},
+		{
+			"folder": "671904a7-332f-421a-982c-7235a0a92bef",
+			"id": "e80b4e1e-4e68-4b72-a382-628d24d04ac6",
+			"name": "{{apiURL}}/api/signin?email=admin@admin.com&password=123456",
+			"dataMode": null,
+			"data": [],
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": null,
+			"variables": null,
+			"headers": "",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{apiURL}}/api/signin?email=admin@admin.com&password=123456",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [
+				{
+					"key": "email",
+					"value": "admin@admin.com",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"equals": true,
+					"enabled": true
+				}
+			],
+			"headerData": [],
+			"pathVariableData": [],
+			"collectionId": "216e716d-1292-9b4c-97fd-7e5dd81f8428"
+		}
+	]
+}
