@@ -19,7 +19,7 @@
 
   
 #### DER
-<p>Existe um diretório, n este projeto, contendo um arquivo chamado DER (Diagrama de Entidade Relacional). Este DER pode ser aberto com o WorkBanch e logo importado para o MySql. Contudo, isponibilizei junto um arquivo SQL para ser importado manualmente - caso exista a necessidade. Isso é uma medida de segurança. Não criei o iagrama no Laravel por saber que pode existir algum conflito entre máquinas e entre versões do MySql ao executar as migrations forçando um migrate por ordem de primarykey. Outro motivo é que para um sistema complexo e grande, o seeder não é viável.</p>
+<p>Existe um diretório, neste projeto, contendo um arquivo chamado DER (Diagrama de Entidade Relacional). Este DER pode ser aberto com o WorkBanch e logo importado para o MySql. Contudo, disponibilizei junto um arquivo SQL para ser importado manualmente - caso exista alguma necessidade. Isso é uma medida de segurança. Não criei o diagrama na migrate do Laravel por saber que pode existir algum conflito entre máquinas e entre versões do MySql (como o maria DB) ao executar as migrations forçando um migrate por ordem de primarykey. Outro motivo é que para um sistema complexo e grande, o seeder não é viável. eM Resumo, para evitar uma hipótese de erro durante a instalação, mantive os arquivos descentralizados.</p>
 
 
 <p>Após subir o banco de dados, é preciso configurá-lo no arquivo <b>.env</b> do sistema inserindo as credenciais de acesso ao MySql (a mesma senha usada no phpmyadmin) </p>
