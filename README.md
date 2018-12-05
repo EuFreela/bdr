@@ -32,7 +32,7 @@ DB_PASSWORD=sua_senha
     
 <p>Após, é preciso popular o banco de dados com as informações default e criar demais tabelas. Abra o terminal no diretório e execute: <b>php artisan migrate</b>, esse comando cria as tabelas definidas na migrate. Execute agora <b>php artisan db:seed</b>, esse comando irá popular as tabelas criadas.</p>
 
-<p><b>Observação: </b> Eu não criei migrates das tabelas pedidas, para tarefas, por saber onde exatamente poderá ser implementado. Além disso, preferi fazê-lo de maneira descentralizada a exemplo. Neste git, se quiser ver as migrates sendo usaas, basta navegar no meu repositório. A maneira descentralizada é interessante para sistemas com um número maior de tabelas.</p>
+<p><b>Observação: </b> Eu não criei migrates das tabelas pedidas, para tarefas, por não saber onde exatamente poderá ser implementado. Além disso, preferi fazê-lo de maneira descentralizada a exemplo. Neste git, se quiser ver as migrates sendo usaas, basta navegar no meu repositório. A maneira descentralizada é interessante para sistemas com um número maior de tabelas.</p>
 
 <hr>
 
