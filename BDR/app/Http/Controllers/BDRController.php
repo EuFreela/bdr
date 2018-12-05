@@ -3,100 +3,119 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
-use Session;
-use Cookie;
-use App\User;
+use App\Model\TaskModel;
+use App\Model\PriorityModel;
 use App\Model\SystemMessageModel;
 
-class BDRController extends Controller
+class TaskController extends Controller
 {
-    private $multiple_3;
-    private $multiple_5;
-    private $multiple_3and5;
-
-
-    function __construct()
+    /*
+    |--------------------------------------------------------------------------
+    | GETTERS
+    |--------------------------------------------------------------------------
+    | @BDR.
+    */
+    public function getCreate()
     {
-        $this->multiple_3 = array();
-        $this->multiple_5 = array();
-        $this->multiple_3and5 = array();
+        return view('task.task-create')
+        ->with(['priority'=>PriorityModel::all()]);
     }
 
-    /**
-     * GETTERS
-     */
-    public function index()
+    public function getList()
     {
-        $this->calcFizzBuzz();
-
-        return view('fizzbuzz.fizzbuzz')
-        ->with(
-            [
-                'multiple_3' => $this->multiple_3,
-                'multiple_5' => $this->multiple_5,
-                'multiple_3and5' => $this->multiple_3and5
-            ]);
-    }
-
-    public function getUserList()
-    {
-        return view('users.user-list')
+        return view('task.task-list')
         ->with([
-            'user' => User::all()
+            'task' => TaskModel::all()
         ]);
     }
 
-    public function Refactor()
+    public function getEdit($id)
     {
-        return view('refactor.refactor');
-    }    
+        return view('task.task-edit')
+        ->with([
+            'task' => TaskModel::where('id','=',$id)->first(),
+            'priority'=>PriorityModel::all()
+        ]);
+    }
 
+    public function getPriority()
+    {
+        return view('task.task-priority')
+        ->with([
+            'task' => TaskModel::all(),
+            'priority'=>PriorityModel::all()
+        ]);
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | POSTTERS
+    |--------------------------------------------------------------------------
+    | @BDR.
+    */
+    public function postCreate(Request $request)
+    {
+        $request->validate([            
+            'Titulo' => 'required',
+            'Descricao' => 'required'     
+        ]);
+
+        $task = TaskModel::create([
+            'name' => $request->Titulo,
+            'description' => $request->Descricao,
+            'priority_id' => $request->Prioridade
+        ]);
+
+        if($task)
+        return redirect()->route('task.getlist')
+            ->with('success',SystemMessageModel::where('code','=',1)->first()->name);
+
+        return redirect()->back()
+            ->with('error',SystemMessageModel::where('code','=',2)->first()->name); 
+    }
+
+    /*
+    |--------------------------------------------------------------------------
+    | PUTTERS
+    |--------------------------------------------------------------------------
+    | @BDR.
+    */
+    public function putEdit(Request $request, $id)
+    {
+        $request->validate([            
+            'Titulo' => 'required',
+            'Descricao' => 'required'     
+        ]);
         
-    public function setRefactor()
-    {
-        session(['loggedin' => 'true']);
-        Cookie::make('loggedin', 'true', 5);
+        $task = TaskModel::where('id','=',$id)
+        ->update([
+            'name' => $request->Titulo,
+            'description' => $request->Descricao,
+            'priority_id' => $request->Prioridade
+        ]);
+
+        if($task)
+        return redirect()->route('task.getlist')
+            ->with('success',SystemMessageModel::where('code','=',3)->first()->name);
+
         return redirect()->back()
-        ->with('success',SystemMessageModel::where('code','=',7)->first()->name);       
+            ->with('error',SystemMessageModel::where('code','=',4)->first()->name);
     }
 
-    public function eraseRefactor()
+    /*
+    |--------------------------------------------------------------------------
+    | DELETTERS
+    |--------------------------------------------------------------------------
+    | @BDR.
+    */
+    public function Delete($id)
     {
-        Session::forget('loggedin');
-        Cookie::queue(Cookie::forget('loggedin')); 
+        if(TaskMOdel::where('id','=',$id)->delete())
+        return redirect()->route('task.getlist')
+            ->with('success',SystemMessageModel::where('code','=',5)->first()->name);
+
         return redirect()->back()
-        ->with('success',SystemMessageModel::where('code','=',8)->first()->name);     
+            ->with('error',SystemMessageModel::where('code','=',6)->first()->name);
     }
-
-    public function navegateRefactor()
-    {
-        if(Session::has('loggedin') or Cookie::has('loggedin'))
-            return Redirect::to('http://www.google.com')->cookie('loggedin');        
-        return redirect()->back()
-        ->with('success',SystemMessageModel::where('code','=',9)->first()->name);
-    }
-
-    
-    /**
-     * PRIVATES
-     */
-    private function calcFizzBuzz()
-    {
-        for($i=1; $i<100; $i++): 
-            
-            switch ($i) {
-                case ($i%3) == 0:
-                    $this->multiple_3[] = 'Fizz';
-                    break;
-                case ($i%5) == 0:
-                    $this->multiple_5[] = 'Buzz';
-                    break;
-                case (($i%5) == 0) && (($i%3) == 0):
-                    $this->multiple_3and5[] = 'FizzBuzz';
-                    break;                
-            }
-        endfor;
-    }
-
 }
